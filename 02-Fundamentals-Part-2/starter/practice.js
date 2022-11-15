@@ -37,10 +37,14 @@ const yearUntilRetirement = (birthye, firstname) => {
 
 const age3 = 2022 - birthye;
 const retirement = 65 - age3;
+if(retirement >1){
 return `${firstname} with ${age3} years retires in ${retirement} years`;
-
 }
-console.log(yearUntilRetirement(2003, 'Thendo'));
+else{
+    return `hoho Thendo has already retired`
+}
+}
+console.log(yearUntilRetirement(1950, 'Thendo'));
 
 
 // function calling another function
